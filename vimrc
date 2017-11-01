@@ -26,16 +26,22 @@ set modelines=3
 " always keep 10 lines at the end of the buffer
 set scrolloff=10
 
+" ~~~~~~~
+" EditorConfig 
+" ~~~~~~~
 let g:EditorConfig_core_mode = 'external_command'
 
+" ~~~~~~~
+" PATHOGEN: Initialization 
+" ~~~~~~~
 execute pathogen#infect()
 execute pathogen#helptags()
 
 " ~~~~~~~
 " Themes 
 " ~~~~~~~
-"set background=dark
-"colorscheme solarized
+set background=dark
+colorscheme solarized
 
 " ~~~~~~~
 " JEDI-VIM: Python autocomplete
@@ -47,5 +53,5 @@ let g:jedi#auto_vim_configuration = 1
 " VIM-AIRLINE: Status Bar 
 " ~~~~~~~
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='solarized'
 
