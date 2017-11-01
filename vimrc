@@ -26,6 +26,11 @@ set modelines=3
 " always keep 10 lines at the end of the buffer
 set scrolloff=10
 
+" select a text and replace occurences with another string in the whole buffer
+" bound to CTRL+r
+" https://stackoverflow.com/a/676619
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 " ~~~~~~~
 " EditorConfig 
 " ~~~~~~~

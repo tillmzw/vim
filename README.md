@@ -21,6 +21,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * `<leader>` = `,` (`.vimrc`!)
 * `CTRL+O` = jump to previous buffer
 * `CTRL+I` = jump to next buffer
+* `CTRL+r` = replace selected text in whole buffer
 
 ### `jedi-vim`
 
