@@ -7,13 +7,16 @@
 ## Install
 
 ```bash:
-
 git clone $repo ~/.vim
 (cd ~/.vim && git submodule update --init)
 ln -s ~/.vim/vimrc ~/.vimrc
 (cd ~/.vim/extra/powerline-fonts && ./install.sh)
-
 ```
+
+### [vim-go](https://github.com/fatih/vim-go)
+
+*You will also need to install all the necessary binaries. vim-go makes it easy to install all of them by providing a command, `:GoInstallBinaries`, which will go get all the required binaries.*
+
 
 ## Cheat Sheet
 
@@ -42,4 +45,10 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * `:Gsplit`, `:Gvsplit`
 * `:Gdiff`
 * `:Gbrowse`
+
+### `vim-go`
+
+* `:GoBuild`, `:GoInstall`, `:GoRun`
+* `gd`: go to definition
+* `Ctrl+X Ctrl+O`: autocomplete
 
