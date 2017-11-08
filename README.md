@@ -46,6 +46,11 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * `:Gdiff`
 * `:Gbrowse`
 
+### `NERDTREE`
+
+* `r`: reload current directory listing
+* `R`: reload root directory listing
+
 ### `vim-go`
 
 * `:GoBuild`, `:GoInstall`, `:GoRun`
