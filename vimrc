@@ -32,6 +32,12 @@ set scrolloff=10
 " https://stackoverflow.com/a/676619
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
+" use the mouse, Luke
+set mouse=a
+
+" use spaces for yaml files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " ~~~~~~~
 " EditorConfig 
 " ~~~~~~~
