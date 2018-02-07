@@ -10,7 +10,14 @@
 git clone $repo ~/.vim
 (cd ~/.vim && git submodule update --init)
 ln -s ~/.vim/vimrc ~/.vimrc
-(cd ~/.vim/extra/powerline-fonts && ./install.sh)
+```
+
+### Fonts
+
+```
+sudo apt install fonts-inconsolata
+mkdir -p ~/.fonts
+wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolata/complete/Inconsolata%20Nerd%20Font%20Complete%20Mono.otf' -O '~/.fonts/Inconsolata Nerd Font Complete Mono.otf'
 ```
 
 ### [vim-go](https://github.com/fatih/vim-go)
