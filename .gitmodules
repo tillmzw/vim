@@ -40,3 +40,6 @@
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "bundle/wpgtk.vim"]
+	path = bundle/wpgtk.vim
+	url = https://github.com/deviantfero/wpgtk.vim.git
