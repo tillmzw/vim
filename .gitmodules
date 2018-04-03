@@ -43,3 +43,6 @@
 [submodule "bundle/wpgtk.vim"]
 	path = bundle/wpgtk.vim
 	url = https://github.com/deviantfero/wpgtk.vim.git
+[submodule "bundle/image.vim"]
+	path = bundle/image.vim
+	url = https://github.com/ashisha/image.vim
