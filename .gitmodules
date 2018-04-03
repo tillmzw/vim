@@ -43,3 +43,6 @@
 [submodule "bundle/wpgtk.vim"]
 	path = bundle/wpgtk.vim
 	url = https://github.com/deviantfero/wpgtk.vim.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git

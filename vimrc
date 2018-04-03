@@ -99,3 +99,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
+" ~~~~~~~
+" tagbar: ctags overview with F8
+" ~~~~~~~
+nmap <F8> :TagbarToggle<CR>
