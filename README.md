@@ -8,7 +8,7 @@
 
 ```bash:
 git clone $repo ~/.vim
-(cd ~/.vim && git submodule update --init)
+(cd ~/.vim && git submodule update --init --recursive)
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
@@ -23,6 +23,12 @@ wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolat
 ### [vim-go](https://github.com/fatih/vim-go)
 
 *You will also need to install all the necessary binaries. vim-go makes it easy to install all of them by providing a command, `:GoInstallBinaries`, which will go get all the required binaries.*
+
+
+### [image.vim](https://github.com/ashisha/image.vim)
+
+* requires PIL
+* absolutely needs python support. remove if no python support available
 
 
 ## Cheat Sheet
