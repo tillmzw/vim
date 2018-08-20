@@ -55,9 +55,8 @@ execute pathogen#helptags()
 " ~~~~~~~
 " Themes 
 " ~~~~~~~
-" -> implicitly use the wpgtk theme
-"set background=dark
-"colorscheme solarized
+set background=dark
+colorscheme solarized
 
 " ~~~~~~~
 " JEDI-VIM: Python autocomplete
