@@ -39,6 +39,20 @@ wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolat
 * `CTRL+I` = jump to next buffer
 * `CTRL+r` = replace selected text in whole buffer
 
+### Window Management
+
+* `CTRL+w J`: Move window to the bottom
+* `CTRL+w L`: Move window to the left
+* `CTRL+w CTRL+r`: Swap windows, i.e. rotate buffers
+* `CTRL+w k`: Change layout to horizontal split
+* `CTRL+w h`: Change layout to vertical split
+
+### Registers
+
+* `"+y`: Copy selection to system-wide clipboard -- *this requires vim with `clipboard` support, e.g. by installing `vim-gtk`*
+* `"*y`: Copy selection to the cut buffer (internal to vim)
+
+
 ### `jedi-vim`
 
 * `Ctrl+Space`: open completion
