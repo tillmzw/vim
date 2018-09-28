@@ -102,3 +102,10 @@ let g:ctrlp_working_path_mode = 'ra'
 " tagbar: ctags overview with F8
 " ~~~~~~~
 nmap <F8> :TagbarToggle<CR>
+
+" ~~~~~~
+" Run ESLint for all *.js files on saving - similar to `gofmt`.
+" Note: You need ESLint, Prettier and ESLint-Prettier plugins for this to
+" work.
+" ~~~~~~
+"autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
