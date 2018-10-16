@@ -84,3 +84,10 @@ wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolat
 * `gd`: go to definition
 * `Ctrl+X Ctrl+O`: autocomplete
 
+### `ale`
+
+* `:help ale-navigation-commands`
+* `:ALEFirst`: go to first warning/error in this file
+* `:ALENext`: ...
+* `:ALEFix`: try to fix currently highlighted issue automatically
+

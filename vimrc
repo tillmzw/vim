@@ -38,22 +38,24 @@ set mouse=a
 " use spaces for yaml files
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-" show whitespace chars
-set list
+" show whitespace chars, and tab with a nice one
+"set list lcs=tab:\┆\ 
+set list lcs=tab:\|\ 
+
 
 " ~~~~~~~
-" EditorConfig 
+" EditorConfig
 " ~~~~~~~
 let g:EditorConfig_core_mode = 'external_command'
 
 " ~~~~~~~
-" PATHOGEN: Initialization 
+" PATHOGEN: Initialization
 " ~~~~~~~
 execute pathogen#infect()
 execute pathogen#helptags()
 
 " ~~~~~~~
-" Themes 
+" Themes
 " ~~~~~~~
 set background=dark
 colorscheme solarized
@@ -65,13 +67,13 @@ let g:jedi#auto_initialization = 1
 let g:jedi#auto_vim_configuration = 1
 
 " ~~~~~~~
-" VIM-AIRLINE: Status Bar 
+" VIM-AIRLINE: Status Bar
 " ~~~~~~~
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 
 " ~~~~~~~
-" NERDTREE: File browser 
+" NERDTREE: File browser
 " ~~~~~~~
 " start on every vim start
 "autocmd vimenter * NERDTree
@@ -91,7 +93,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <C-n> :NERDTreeToggle<CR>
 
 " ~~~~~~~
-" CTRLP: better fuzzy search 
+" CTRLP: better fuzzy search
 " https://github.com/ctrlpvim/ctrlp.vim
 " ~~~~~~~
 let g:ctrlp_map = '<c-p>'
@@ -104,8 +106,23 @@ let g:ctrlp_working_path_mode = 'ra'
 nmap <F8> :TagbarToggle<CR>
 
 " ~~~~~~
-" Run ESLint for all *.js files on saving - similar to `gofmt`.
-" Note: You need ESLint, Prettier and ESLint-Prettier plugins for this to
-" work.
+" ALE: Syntax checking
+" Note: requires eslint for javascript
+"       use :help ale-navigation-commands for infos on how to move between
+"       warnings/errors.
 " ~~~~~~
-"autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
+"let g:ale_fix_on_save = 1
+" keep the sign column always open, not just when an issue was found
+let g:ale_sign_column_always = 1
+"let g:ale_sign_error = "◉"
+"let g:ale_sign_warning = "◉"
+
+" ~~~~~~~
+" indentLine
+" ~~~~~~~
+let g:indentLine_char = '┆'
+
