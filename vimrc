@@ -126,3 +126,12 @@ let g:ale_sign_column_always = 1
 " ~~~~~~~
 let g:indentLine_char = '┆'
 
+" ~~~~~~~
+" uncrustify - c/c++ beautifier
+" https://github.com/cofyc/vim-uncrustify
+" ~~~~~~~
+autocmd FileType c noremap <buffer> <c-f> :call Uncrustify('c')<CR>
+autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
+autocmd FileType cpp noremap <buffer> <c-f> :call Uncrustify('cpp')<CR>
+autocmd FileType cpp vnoremap <buffer> <c-f> :call RangeUncrustify('cpp')<CR>
+
