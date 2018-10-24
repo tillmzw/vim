@@ -91,3 +91,7 @@ wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolat
 * `:ALENext`: ...
 * `:ALEFix`: try to fix currently highlighted issue automatically
 
+### `uncrustify`
+
+* `Ctrl+r`: run uncrustify on currently open file (if file is C or CPP)
+

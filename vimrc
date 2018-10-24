@@ -129,6 +129,7 @@ let g:indentLine_char = '┆'
 " ~~~~~~~
 " uncrustify - c/c++ beautifier
 " https://github.com/cofyc/vim-uncrustify
+" <c-f> means CTRL+f or CTRL+c
 " ~~~~~~~
 autocmd FileType c noremap <buffer> <c-f> :call Uncrustify('c')<CR>
 autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
