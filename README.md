@@ -95,3 +95,7 @@ wget 'https://github.com/ryanoasis/nerd-fonts/raw/1.2.0/patched-fonts/Inconsolat
 
 * `Ctrl+r`: run uncrustify on currently open file (if file is C or CPP)
 
+### `commentary`
+
+* `gcc`: toggle commentation of a line
+* `gc`: toggle commentation of a motion (i.e. a context)

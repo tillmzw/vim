@@ -61,3 +61,6 @@
 [submodule "bundle/vim-uncrustify"]
 	path = bundle/vim-uncrustify
 	url = https://github.com/Cofyc/vim-uncrustify.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://tpope.io/vim/commentary.git
