@@ -42,6 +42,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 "set list lcs=tab:\┆\ 
 set list lcs=tab:\|\ 
 
+" disable full concealment when cursor is on the line for markdown
+" this is overwritten by indentLine, so we need to apply some magic here
+autocmd FileType markdown let g:indentLine_setConceal = 0 | set concealcursor=v
 
 " ~~~~~~~
 " EditorConfig
