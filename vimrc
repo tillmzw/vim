@@ -49,7 +49,6 @@ autocmd FileType markdown let g:indentLine_setConceal = 0 | set concealcursor=v
 " ~~~~~~~
 " EditorConfig
 " ~~~~~~~
-let g:EditorConfig_core_mode = 'external_command'
 
 " ~~~~~~~
 " PATHOGEN: Initialization
