@@ -116,6 +116,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
+\   'python': ['flake8'],
 \}
 "let g:ale_fix_on_save = 1
 " keep the sign column always open, not just when an issue was found
