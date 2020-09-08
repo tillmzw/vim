@@ -60,7 +60,7 @@ execute pathogen#helptags()
 " Themes
 " ~~~~~~~
 set background=dark
-colorscheme solarized
+colorscheme wal 
 
 " ~~~~~~~
 " JEDI-VIM: Python autocomplete

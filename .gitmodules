@@ -55,3 +55,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://tpope.io/vim/commentary.git
+[submodule "bundle/wal.vim"]
+	path = bundle/wal.vim
+	url = https://github.com/dylanaraps/wal.vim.git
