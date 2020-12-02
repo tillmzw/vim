@@ -58,3 +58,6 @@
 [submodule "bundle/wal.vim"]
 	path = bundle/wal.vim
 	url = https://github.com/dylanaraps/wal.vim.git
+[submodule "/var/home/till/.vim/bundle/csv"]
+	path = bundle/csv
+	url = https://github.com/chrisbra/csv.vim
