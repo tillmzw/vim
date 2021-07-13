@@ -71,8 +71,10 @@ let g:jedi#auto_vim_configuration = 1
 " ~~~~~~~
 " VIM-AIRLINE: Status Bar
 " ~~~~~~~
+set guifont=Hack_Regular:h12
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+let g:airline#extensions#tabline#enabled = 1
 
 " ~~~~~~~
 " NERDTREE: File browser
@@ -139,3 +141,11 @@ autocmd FileType c vnoremap <buffer> <c-f> :call RangeUncrustify('c')<CR>
 autocmd FileType cpp noremap <buffer> <c-f> :call Uncrustify('cpp')<CR>
 autocmd FileType cpp vnoremap <buffer> <c-f> :call RangeUncrustify('cpp')<CR>
 
+" ~~~~~~~
+" devicons 
+" ~~~~~~~
+" there are some issues with the  glyph not being available for some fonts...
+" test with: 
+" :echo g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol
+let g:webdevicons_enable_nerdtree = 0
+autocmd FileType nerdtree setlocal nolist
